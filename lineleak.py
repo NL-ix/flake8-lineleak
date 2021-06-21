@@ -132,26 +132,26 @@ class Screener():
         """Register optional arguments."""
         parser.add_option(
             "--lineleak-ignore", default="",
-            parse_from_config=False, comma_separated_list=True,
+            parse_from_config=True, comma_separated_list=True,
             help="Specifies files leakline must ignore."
         )
 
         parser.add_option(
             "--lineleak-logical", action="store_true",
-            parse_from_config=False,
+            parse_from_config=True,
             help="Applies line count limit to logical lines."
         )
 
         parser.add_option(
             "--live-code-count", action="store_true",
-            parse_from_config=False,
+            parse_from_config=True,
             help="Displays the number of physical"
                  "and logical lines containing live code."
         )
 
         parser.add_option(
             "--max-line-count", type=int,
-            parse_from_config=False,
+            parse_from_config=True,
             help="Changes the maximum limit for live code line count."
         )
 
