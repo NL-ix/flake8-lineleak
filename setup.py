@@ -8,7 +8,7 @@ def long_description():
 
 setup(
     name="flake8-lineleak",
-    version="1.0.2",
+    version="1.1.0",
     description="Lineleak is a flake8 plugin that counts the"
 	" lines containing live code in a script, and 'yells' if"
     " a set limit is exceeded. It is meant to help enforce"
